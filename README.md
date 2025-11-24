@@ -1,6 +1,6 @@
 # CoUn: Empowering Machine Unlearning via Contrastive Learning 复现代码
 
-本仓库提供论文 **《CoUn: Empowering Machine Unlearning via Contrastive Learning》**（arXiv链接：[xxx](xxx)）的完整复现代码。
+本仓库为论文 **《CoUn: Empowering Machine Unlearning via Contrastive Learning》**（arXiv链接：https://arxiv.org/abs/2509.16391 ）的复现代码。
 
 ## ⚠️ 免责声明
 本仓库中大部分代码由AI工具生成，作者不保证代码的准确性、完整性和正确性。用户使用本代码所产生的一切问题由自身承担。
