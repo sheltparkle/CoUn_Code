@@ -20,7 +20,7 @@
 ```bash
 python Original_Model.py
 ```
-最优性能的原始模型会自动保存到 `SAVE_ORIGINAL_PATH` 指定的路径。
+最优性能的原始模型会自动保存到 `Original_PATH` 指定的路径。
 
 ### 3. 执行CoUn主训练（Run CoUn Main Training）
 运行 `CoUn_Main.py` 执行机器遗忘训练（仅使用保留数据 `Dr`，不访问遗忘数据 `Du`）：
@@ -29,7 +29,7 @@ python CoUn_Main.py
 ```
 训练过程核心特点：
 - 自动从训练集中剔除待遗忘类别，构建保留数据 `Dr`
-- 支持自定义 `Dr` 中每个非遗忘类的样本数量（修改 `CoUn_Main.py` 中的 `PER_CLASS_SAMPLES` 参数）
+- 支持自定义 `Dr` 中每个非遗忘类的样本数量（修改 `CoUn_Utils.py` 中的 `PER_CLASS_SAMPLES` 参数）
 - 采用CE损失（保障模型性能）与InfoNCE损失（实现遗忘功能）联合训练
 - 基于总损失保存最优CoUn模型
 
