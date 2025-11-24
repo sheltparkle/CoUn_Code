@@ -1,0 +1,19 @@
+import torch
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+BATCH_SIZE = 128
+EPOCHS = 60  # 足够训练轮数，确保高准确率
+LR = 3e-4
+WEIGHT_DECAY = 1e-4
+DATASET_ROOT = " " # 数据集保存路径
+Original_PATH = " "  # 原始模型保存路径
+Unlearn_PATH = " "  # 原始模型保存路径
+EPOCHS_COUN = 80  # CoUn训练轮数
+LR_COUN = 3e-5 # 学习率
+PER_CLASS_SAMPLES = None #默认为全样本
+SAMPLING_SEED = 42  # 采样随机种子
+TAU = 0.07  # 对比学习温度系数（论文固定0.07）
+LAMBDA = 0.5  # CL损失权重（论文最优值0.5）
+FORGET_CLASS = 0  # 待遗忘类别
+NUM_CLASSES = 10  # CIFAR10类别数
+FEAT_DIM = 512  # ResNet18 avgpool输出特征维度
+DIFF_THRESHOLD = 0.1
